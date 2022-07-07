@@ -1,0 +1,18 @@
+POST http://localhost:5500/api/send-otp HTTP/1.1
+Content-Type: application/json
+
+{
+    "phone": "+91 96488 17643"
+}
+  
+###
+
+POST http://localhost:5500/api/verify-otp HTTP/1.1
+Content-Type: application/json
+
+{
+    "phone": "+91 96488 17643",
+    "otp": 3221,
+    "hash": "33eaf2f71228f78bb4da5ae5a3a80791a67d0e4f48e709f7dc3a86bc4529ab7f.1656526103788"
+}
+ 
